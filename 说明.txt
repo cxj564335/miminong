@@ -1,0 +1,3 @@
+1.导入数据库db.sql
+2.数据库配置在/controller/pdomysql.class.php
+3.管理员admin admin123

@@ -1,0 +1,10 @@
+# BEGIN TTTuangou
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Rewrite --- http://dywmw.com/miminong/user.php?action=myinfo => http://dywmw.com/miminong/user/action-myinfo.html
+RewriteCond %{QUERY_STRING} (^|&)action=myinfo($|&)
+RewriteRule ^miminong/user\.php$ /miminong/user/action-myinfo.html?&%{QUERY_STRING}
+
+</IfModule>
+# END TTTuangou
